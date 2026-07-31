@@ -1,0 +1,8 @@
+{
+    "python.django.project.supportEnabled": false,
+    "python.project.sourceRoots": [
+        ".",
+        "src"
+    ],
+    "python.project.excluded": []
+}

@@ -1,0 +1,5 @@
+In a circular queue, we make use of the pointer of the front and rear of the queue.
+
+Each time we add a new item to the queue, we add it to the new empty space and then we increment the rear pointer by one.
+Each time we remove an item from the front of the queue we remove it and then increment the front pointer by one.
+If any of the pointers are equal to the length of the array then we need to reset that pointer position to zero.

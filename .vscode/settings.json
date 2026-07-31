@@ -1,0 +1,5 @@
+{
+    "python.analysis.extraPaths": [
+        "./Part 1 ~ Basics/Chapter 9"
+    ]
+}

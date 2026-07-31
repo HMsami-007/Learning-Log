@@ -1,0 +1,2 @@
+print("Sami")
+print("\nSami")
