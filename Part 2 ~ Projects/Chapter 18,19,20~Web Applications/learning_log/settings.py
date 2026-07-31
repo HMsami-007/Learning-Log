@@ -26,7 +26,15 @@ SECRET_KEY = 'django-insecure-wh59)3664luijfhal@bk$sgxz!7i*rn1s+#=m=p3v-$*5=g(6x
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    "learning-log-9gl1.onrender.com",
+    "localhost",
+    "127.0.0.1",
+]
+
+CSRF_TRUSTED_ORIGINS = [
+    "https://learning-log-9gl1.onrender.com",
+]
 
 
 # Application definition
@@ -129,23 +137,4 @@ LOGIN_URL='/users/login/'
 BOOTSTRAP3={
     'include_jquery':True,
     }
-#Heroku Settings
-if os.getcwd()=='/app':
-    import dj_database_url
-    DATABASES={
-        'default':dj_database_url.config(default='postgres://localhost')        
-    }
-
-    #Honor the 'X-Forwarded-Proto' header for request.is_secure().
-    SECURE_PROXY_SSL_HEADER=('HTTP_X_FORWARDED_PROTO','https')
-
-    #Allow all host headers
-    ALLOWED_HOSTS=['*']
-
-    #Static asset configuration
-    BASE_DIR=os.path.dirname(os.path.abspath(__file__))
-    STATIC_ROOT='staticfiles'
-    STATICFILES_DIRS=(
-        os.path.join(BASE_DIR,'static'),
-    )
 
