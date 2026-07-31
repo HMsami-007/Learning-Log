@@ -1,0 +1,1 @@
+Learning Log is a simple web-based application made for curious minds who love to learn and keep a note of what they have learnt in a day. Try out Learning Log now: https://learning-log-9gl1.onrender.com/users/login/
